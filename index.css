@@ -98,6 +98,7 @@ body {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  justify-self: center;
 }
 .image_locatie {
   display: block;
@@ -315,7 +316,7 @@ body {
 /* '
 responsive design fixes
 */
-
+/*
 #landing-text {
   height: clamp(200px, 40vh, 800px);
   width: clamp(250px, 35%, 800px);
@@ -351,6 +352,7 @@ responsive design fixes
 .mini {
   width: clamp(200px, 50vw, 600px);
 }
+
 
 @media (min-width: 1800px) {
   .image_div {
@@ -594,5 +596,466 @@ responsive design fixes
   }
   .inhoud {
     width: 50vw;
+  }
+}
+    */
+/* telefoon probeersel*/
+@media (min-width: 300px) and (min-height: 500px) {
+  .sectie-z {
+    height: 100dvh;
+  }
+  .inhoud {
+    width: 80vw;
+  }
+  #landing-text {
+    height: clamp(200px, 40vh, 800px);
+    width: clamp(250px, 35%, 800px);
+  }
+  #landing-titel {
+    font-size: clamp(18px, 2.5vw, 38px);
+    padding: 2px;
+    padding-left: 5px;
+  }
+
+  #landing-footer {
+    font-size: clamp(12px, 1.2vw, 20px);
+    padding: 2px;
+    padding-left: 5px;
+  }
+
+  .inhoud h2 {
+    font-size: clamp(10px, 2vw, 38px);
+  }
+
+  .inhoud p,
+  .dubbel-lijst li,
+  .lijst li {
+    font-size: clamp(9px, 1.2vw, 22px);
+  }
+  .image_hover_tekst {
+    font-size: clamp(4px, 1.2vw, 18px);
+  }
+  .titel-column-lijst {
+    font-size: clamp(12px, 1.5vw, 22px);
+  }
+
+  .mini {
+    width: clamp(200px, 50vw, 600px);
+  }
+  .image_div {
+    min-height: clamp(50px, 25vh, 160px);
+    max-height: clamp(100px, 25vh, 175px);
+    min-width: clamp(100px, 12.5vw, 125px);
+    max-width: clamp(150px, 12.5vw, 175px);
+    margin-top: 2.5vh;
+  }
+  .image_divider {
+    width: 100vw;
+
+  }
+  .image_hover_tekst {
+    font-size: clamp(6px, 2.2vw, 18px);
+    height: inherit;
+  }
+  .image_div img,
+  .image-hod img {
+    height: inherit;
+    width: inherit;
+  }
+  .image-hod {
+    min-height: clamp(100px, 20vh, 125px);
+    max-height: clamp(200px, 30vh, 175px);
+    min-width: clamp(100px, 12.5vw, 175px);
+  }
+
+  #p41 .box-centraal .sectie-z,
+  #p42 .box-centraal .sectie-z,
+  #p43 .box-centraal .sectie-z {
+    height: 100vh;
+    padding-top: 12px;
+    padding-bottom: 48px;
+  }
+  #p42 .box-centraal .sectie-z,
+  #p43 .box-centraal .sectie-z {
+    align-items: flex-start;
+  }
+
+  #p42 .inhoud,
+  #p43 .inhoud {
+    width: clamp(300px, 70vw, 900px);
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+    margin: 2vh auto 0;
+    box-sizing: border-box;
+    padding-right: 12px;
+  }
+
+  #p42 .woordgebruik-divider-lijsten,
+  #p43 .woordgebruik-divider-lijsten {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  #p42 .dubbel-lijst,
+  #p43 .dubbel-lijst {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  #p42 .dubbel-lijst li,
+  #p43 .dubbel-lijst li {
+    border-left: none;
+  }
+  #fli1,
+  #fli2 {
+    border-bottom: 1px solid #333;
+  }
+  #p42.dubbel-lijst li:last-child,
+  #p43.dubbel-lijst li:last-child {
+    border-bottom: none;
+  }
+
+  #p41 .asvgr,
+  #p42 .asvgr,
+  #p43 .asvgr {
+    bottom: 2vh;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: auto;
+  }
+
+  #p41 .inhoud p,
+  #p42 .inhoud p,
+  #p43 .inhoud p,
+  #p42 .inhoud .lijst li,
+  #p43 .inhoud .lijst li {
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+  }
+
+  #p42 .inhoud::-webkit-scrollbar,
+  #p43 .inhoud::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  #p42 .inhoud::-webkit-scrollbar-thumb,
+  #p43 .inhoud::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.12);
+    border-radius: 6px;
+  }
+  .titel-override-resp {
+    font-weight: 400;
+    font-style: italic;
+  }
+  .wi-override-resp {
+    font-style: italic;
+  }
+  .wb-override-resp {
+    font-weight: 550;
+  }
+}
+/* kleiner = scrollbar - laptop scherm ish */
+@media (min-width: 1000px) and (min-height: 550px) {
+  #landing-text {
+    height: clamp(200px, 40vh, 800px);
+    width: clamp(250px, 35%, 800px);
+  }
+  #landing-titel {
+    font-size: clamp(20px, 2.5vw, 38px);
+    padding: 2px;
+    padding-left: 5px;
+  }
+
+  #landing-footer {
+    font-size: clamp(14px, 1.2vw, 20px);
+    padding: 2px;
+    padding-left: 5px;
+  }
+
+  .inhoud h2 {
+    font-size: clamp(12px, 1.8vw, 38px);
+  }
+
+  .inhoud p,
+  .dubbel-lijst li,
+  .lijst li {
+    font-size: clamp(10px, 0.8vw, 22px);
+  }
+  .image_hover_tekst {
+    font-size: clamp(4px, 0.8vw, 18px);
+  }
+  .titel-column-lijst {
+    font-size: clamp(14px, 0.8vw, 22px);
+  }
+
+  .mini {
+    width: clamp(200px, 50vw, 600px);
+  }
+  .image_div {
+    min-height: clamp(50px, 25vh, 125px);
+    max-height: clamp(100px, 25vh, 125px);
+    min-width: clamp(100px, 12.5vw, 125px);
+    max-width: clamp(150px, 12.5vw, 175px);
+    margin-top: 2.5vh;
+  }
+  .image_locatie {
+    max-height: clamp(100px, 25vh, 125px);
+  }
+  .image_hover_tekst {
+    font-size: clamp(4px, 0.8vw, 18px);
+    inset: 0;
+  }
+
+  .image-hod {
+    min-height: clamp(100px, 20vh, 125px);
+    max-height: clamp(200px, 30vh, 175px);
+    min-width: clamp(100px, 12.5vw, 175px);
+  }
+
+  #p41 .box-centraal .sectie-z,
+  #p42 .box-centraal .sectie-z,
+  #p43 .box-centraal .sectie-z {
+    height: 100vh;
+    padding-top: 12px;
+    padding-bottom: 48px;
+  }
+  #p42 .box-centraal .sectie-z,
+  #p43 .box-centraal .sectie-z {
+    align-items: flex-start;
+  }
+
+  #p42 .inhoud,
+  #p43 .inhoud {
+    width: clamp(300px, 70vw, 900px);
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+    margin: 2vh auto 0;
+    box-sizing: border-box;
+    padding-right: 12px;
+  }
+
+  #p42 .woordgebruik-divider-lijsten,
+  #p43 .woordgebruik-divider-lijsten {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  #p42 .dubbel-lijst,
+  #p43 .dubbel-lijst {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  #p42 .dubbel-lijst li,
+  #p43 .dubbel-lijst li {
+    border-left: none;
+  }
+  #fli1,
+  #fli2 {
+    border-bottom: 1px solid #333;
+  }
+  #p42.dubbel-lijst li:last-child,
+  #p43.dubbel-lijst li:last-child {
+    border-bottom: none;
+  }
+
+  #p41 .asvgr,
+  #p42 .asvgr,
+  #p43 .asvgr {
+    bottom: 2vh;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: auto;
+  }
+
+  #p41 .inhoud p,
+  #p42 .inhoud p,
+  #p43 .inhoud p,
+  #p42 .inhoud .lijst li,
+  #p43 .inhoud .lijst li {
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+  }
+
+  #p42 .inhoud::-webkit-scrollbar,
+  #p43 .inhoud::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  #p42 .inhoud::-webkit-scrollbar-thumb,
+  #p43 .inhoud::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.12);
+    border-radius: 6px;
+  }
+  .titel-override-resp {
+    font-weight: 400;
+    font-style: italic;
+  }
+  .wi-override-resp {
+    font-style: italic;
+  }
+  .wb-override-resp {
+    font-weight: 550;
+  }
+}
+
+/* Dit is 1920x1080 rekening houdend met top en bottom bars*/
+@media (min-width: 1800px) and (min-height: 900px) {
+  .inhoud {
+    width: 45vw;
+  }
+  .inhoud h2 {
+    font-size: clamp(14px, 2vw, 30px);
+  }
+
+  .image_div {
+    margin-top: 4vh;
+    max-height: clamp(100px, 25vh, 250px);
+    max-width: clamp(100px, 25vh, 250px);
+  }
+  .image-hod {
+    max-height: clamp(175px, 35vh, 300px);
+    max-width: clamp(175px, 35vh, 300px);
+  }
+  .inhoud p,
+  .lijst li {
+    font-size: clamp(12px, 1.2vw, 20px);
+  }
+  .dubbel-lijst li {
+    font-size: clamp(8px, 0.75vw, 18px);
+  }
+  .image_hover_tekst {
+    font-size: clamp(4px, 1.2vw, 16px);
+  }
+  .titel-column-lijst {
+    font-size: clamp(16px, 1.5vw, 20px);
+  }
+
+  .mini {
+    width: clamp(200px, 50vw, 600px);
+  }
+}
+
+/* Dit is 2560x1080 rekening houdend met top en bottom bars*/
+@media (min-width: 2000px) and (min-height: 900px) {
+  .inhoud {
+    width: 50vw;
+  }
+  .image_div {
+    margin-top: 4vh;
+    max-height: clamp(100px, 25vh, 300px);
+    max-width: clamp(100px, 25vh, 300px);
+  }
+  .image-hod {
+    max-height: clamp(175px, 35vh, 325px);
+    max-width: clamp(175px, 35vh, 325px);
+  }
+  .inhoud h2 {
+    font-size: clamp(14px, 2vw, 30px);
+  }
+  .image_div {
+    margin-top: 4vh;
+  }
+  .inhoud p,
+  .lijst li {
+    font-size: clamp(12px, 1.2vw, 20px);
+  }
+  .dubbel-lijst li {
+    font-size: clamp(12px, 1.2vw, 18px);
+  }
+  .image_hover_tekst {
+    font-size: clamp(4px, 1.2vw, 16px);
+  }
+  .titel-column-lijst {
+    font-size: clamp(16px, 1.5vw, 20px);
+  }
+
+  .mini {
+    width: clamp(200px, 50vw, 600px);
+  }
+}
+/* Dit is 2560x1440 rekening houdend met top en bottom bars*/
+@media (min-width: 2000px) and (min-height: 1100px) {
+  .inhoud {
+    width: 50vw;
+  }
+  .image_div {
+    margin-top: 4vh;
+    max-height: clamp(100px, 25vh, 400px);
+    max-width: clamp(100px, 25vh, 400px);
+  }
+  .image-hod {
+    max-height: clamp(175px, 35vh, 400px);
+    max-width: clamp(175px, 35vh, 400px);
+  }
+  .inhoud h2 {
+    font-size: clamp(14px, 2vw, 30px);
+  }
+  .image_div {
+    margin-top: 4vh;
+  }
+  .inhoud p,
+  .lijst li {
+    font-size: clamp(12px, 1.2vw, 20px);
+  }
+  .dubbel-lijst li {
+    font-size: clamp(12px, 1.2vw, 18px);
+  }
+  .image_hover_tekst {
+    font-size: clamp(4px, 1.2vw, 16px);
+  }
+  .titel-column-lijst {
+    font-size: clamp(16px, 1.5vw, 20px);
+  }
+
+  .mini {
+    width: clamp(200px, 50vw, 600px);
+  }
+}
+
+/* Dit is 4K rekening houdend met top en bottom bars*/
+@media (min-width: 3500px) and (min-height: 1900px) {
+  .inhoud {
+    width: 70vw;
+  }
+  .image_div {
+    margin-top: 4vh;
+    max-height: clamp(100px, 45vh, 1000px);
+    max-width: clamp(100px, 45vh, 1000px);
+  }
+  .image-hod {
+    max-height: clamp(175px, 45vh, 1000px);
+    max-width: clamp(175px, 45vh, 1000px);
+  }
+  .inhoud h2 {
+    font-size: clamp(14px, 2vw, 40px);
+  }
+  #landing-titel {
+    font-size: clamp(14px, 2vw, 60px);
+  }
+  #landing-footer {
+    font-size: clamp(14px, 2vw, 40px);
+  }
+  .image_div {
+    margin-top: 4vh;
+  }
+  .inhoud p,
+  .lijst li {
+    font-size: clamp(12px, 1.2vw, 30px);
+  }
+  .dubbel-lijst li {
+    font-size: clamp(12px, 1.2vw, 30px);
+  }
+  .image_hover_tekst {
+    font-size: clamp(4px, 1.2vw, 30px);
+  }
+  .titel-column-lijst {
+    font-size: clamp(16px, 1.5vw, 30px);
+  }
+
+  .mini {
+    width: clamp(200px, 50vw, 600px);
   }
 }
